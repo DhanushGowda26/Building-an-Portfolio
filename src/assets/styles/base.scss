@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+   &::after,
+   &::before{
+        box-sizing: border-box;
+    }
+}
+html,
+body{
+    overflow-x: hidden;
+}
+body{
+    font-family: "poppins", sans-serif;
+    // line space is default(110 0r 120) so making it uniform
+    line-height: 1.5;
+    // improoves the quality of font
+    -webkit-font-smoothing: antialiased;      
+   
+}
+// to make sure the same font style remains,it inherits from its parent(body)-same font styling like family,weight,size,etc
+button,
+input,
+textarea,
+select{
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word;
+}
+img,
+video,
+canvas,
+svg{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+// variables
+$backgrounf-color:#0b134f;
+$green-color: #6cff8d;
+$dark-green-color:#6cff8c7a;
+$red-color:#f44336;
+$blue-color:#f21963;
